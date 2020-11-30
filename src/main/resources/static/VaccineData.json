@@ -1,0 +1,51 @@
+[
+  {
+    "month": 0,
+    "vaccines": [
+      "HepB"
+    ]
+  },
+  {
+    "month": 1,
+    "vaccines": [
+      "HepB"
+    ]
+  },
+  {
+    "month": 2,
+    "vaccines": [
+      "RV", "DTaP", "Hib", "PCV13","IPV"
+    ]
+  },
+  {
+    "month": 4,
+    "vaccines": [
+      "RV", "DTaP", "Hib", "PCV13","IPV"
+    ]
+  },
+  {
+    "month": 6,
+    "vaccines": [
+      "HepB","RV", "DTaP", "Hib", "PCV13","IPV", "Influenza"
+    ]
+  },
+  {
+    "month": 12,
+    "vaccines": [
+      "Hib", "PCV13","MMR", "Varicella", "HepA"
+    ]
+  },
+  {
+    "month": 15,
+    "vaccines": [
+      "DTaP"
+    ]
+  },
+  {
+    "month": 48,
+    "vaccines": [
+      "DTaP", "IPV", "MMR", "Varicella"
+    ]
+  }
+
+]
