@@ -25,14 +25,14 @@ public class VaccineDataController {
     private CalendarEventsService calendarEventsService;
 
     @GetMapping("/patient/{patient_id}")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://immune-tracker-ui.herokuapp.com")
     public List<ImmunizationData> getAllVaccines(@PathVariable("patient_id") String patientId ){
         List<ImmunizationData> immuneList = vaccinesFHIRService.getImmunizationData(patientId);
         return immuneList;
     }
 
     @GetMapping("/patient/recvaccines")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://immune-tracker-ui.herokuapp.com")
     public List<VaccineDetails> getAllRecVaccines(){
         List<VaccineDetails> vacRecList = VaccineUtils.getRecVaccines();
         System.out.println("size=="+vacRecList.size());
@@ -40,7 +40,7 @@ public class VaccineDataController {
     }
 
     @GetMapping("/calendar_events/{patient_id}")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://immune-tracker-ui.herokuapp.com")
     public List<Events> getAllCalendarEvents(@PathVariable("patient_id") String patientId) throws ParseException {
         return calendarEventsService.getAllVaccineEvents(patientId);
     }
